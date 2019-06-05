@@ -1,0 +1,61 @@
+﻿<Window x:Class="HeadLineNewsAdmin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HeadLineNewsAdmin" 
+        mc:Ignorable="d"
+        Title="Channel List"  Height="450" Width="800"
+            Closed="Window_Closed" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+   
+     <DockPanel>
+        <Menu DockPanel.Dock="Top" IsMainMenu="True" Background="{DynamicResource PrimaryHueDarkBrush}" Foreground="White">
+            <MenuItem Header="_File">
+                <MenuItem Header="Exit" InputGestureText="Ctrl+E" Click="MenuItemExit_Click"/>
+            </MenuItem>
+             <MenuItem Header="Add Channel" Click="AddEditChannel_MenuClick" />
+            </Menu>
+        <StatusBar DockPanel.Dock="Bottom" Height="22">
+            <StatusBarItem>
+                <TextBlock Name="sbLastOp" Text="Program started"/>
+            </StatusBarItem>
+        </StatusBar>
+        <ListView Margin="10" Name="lvChannel"  MouseDoubleClick="LvChannel_MouseDoubleClick" >
+            <ListView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Edit" Click="Edit_ContextMenuClick" />
+                    <MenuItem Header="Delete" Click="Delete_ContextMenuClick" />
+                </ContextMenu>
+            </ListView.ContextMenu>
+
+            <ListView.View >
+                <GridView >
+                    <GridViewColumn Header="Id" Width="30" DisplayMemberBinding="{Binding Ch_id}" />
+
+                    <GridViewColumn  Header="Icon" Width="60" >
+                    <GridViewColumn.CellTemplate>
+                    <DataTemplate>
+                                <Image Source="{Binding IconImage}" />
+                    </DataTemplate>
+                    </GridViewColumn.CellTemplate>
+                       
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Name " Width="80" DisplayMemberBinding="{Binding Ch_name }" />
+
+                    <GridViewColumn Header="Source" Width="80" DisplayMemberBinding="{Binding Source }" />
+                    <GridViewColumn Header="Location" Width="80" DisplayMemberBinding="{Binding Location }" />
+                          </GridView>
+            </ListView.View>
+        </ListView>
+    </DockPanel>
+
+</Window>

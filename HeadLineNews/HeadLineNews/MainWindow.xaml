@@ -1,0 +1,81 @@
+﻿<Window x:Class="HeadLineNews.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HeadLineNews"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        mc:Ignorable="d"
+        
+        Title="MainWindow"  Height="800" Width="800" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition  />
+        </Grid.ColumnDefinitions>
+        <Grid Name="printGrid"  Grid.Column="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"></RowDefinition>
+                <RowDefinition Height="5"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <WrapPanel   Grid.Row="0"  Name="wpChannels" Margin="10,10,0,0"  />
+            <GridSplitter  Grid.Row="1"  Height="5" VerticalAlignment="Top"   HorizontalAlignment="Stretch" 
+            
+              Background="Black" 
+              ShowsPreview="true"
+              ResizeDirection="Rows" 
+                           />
+            <ListView  Grid.Row="2" MouseDoubleClick="ArticleTitle_MouseDown" SelectionChanged="LbNewsLists_SelectionChanged" Name="lbNewsLists" HorizontalAlignment="Left"  VerticalAlignment="Top">
+                <ListView.View>
+                    <GridView  ColumnHeaderContainerStyle="{StaticResource myHeaderStyle}">
+
+                        <GridViewColumn  DisplayMemberBinding="{Binding Title}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+        </Grid>
+        <Grid  Grid.Column="2" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel  Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Click="ButtonPrint_Click" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="40" Content="{materialDesign:PackIcon LocalPrintShop}" Style="{StaticResource MaterialDesignFloatingActionDarkButton}"
+    ToolTip="Print this page" Height="41" Margin="0,4,0,0"/>
+
+                <Button Click="OpenBrowser_ButtonClick"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="40"  Style="{StaticResource MaterialDesignFloatingActionDarkButton}" Content="{materialDesign:PackIcon Edge}"
+                ToolTip="Open in Browser" RenderTransformOrigin="0.492,-0.892" Height="41" Margin="0,4,0,0"/>
+                <Button   Click="ChannelManage_ButtonClick"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="40"  Style="{StaticResource MaterialDesignFloatingActionDarkButton}" Content="{materialDesign:PackIcon SettingsOutline}"
+                ToolTip="Manage your channel" RenderTransformOrigin="0.492,-0.892" Height="41" Margin="0,4,0,0"/>
+                <Button  Click="RegisteLogout_ButtonClick" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Content="{materialDesign:PackIcon AccountSettings}" Style="{StaticResource MaterialDesignFloatingActionDarkButton}"
+    ToolTip="Manage your account" Height="41" Margin="0,4,0,0"/>
+
+            </StackPanel>
+            <WebBrowser  Grid.Row="2" Name="wbIE" Source="Http://www.google.com" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <TextBox Name="tbSearch" HorizontalAlignment="Left" Height="23" Margin="25,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Button Name="btnSearch" Click="BtnSearch_ButtonClick" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="40" Content="{materialDesign:PackIcon FeatureSearchOutline}" Style="{StaticResource MaterialDesignFloatingActionDarkButton}"
+                ToolTip="Search news" Height="41" Margin="150,4,0,0"/>
+
+
+
+
+        </Grid>
+
+
+        <GridSplitter Grid.Column="1" Grid.RowSpan="3" Width="5" HorizontalAlignment="Stretch" />
+
+
+    </Grid>
+
+</Window>

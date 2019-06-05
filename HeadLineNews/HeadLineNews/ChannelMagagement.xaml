@@ -1,0 +1,31 @@
+﻿<Window x:Class="HeadLineNews.ChannelMagagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HeadLineNews"
+        mc:Ignorable="d" 
+        Title="ChannelMagagement" Height="450" MinWidth="400" Width="600" WindowStyle="None">
+    <Grid>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <WrapPanel Name="wpChannels">
+                
+                
+            </WrapPanel>
+            
+              </Grid>
+        <Grid Grid.Row="1">
+            <Button IsCancel="True" Content="Cancel"  HorizontalAlignment="Right"  VerticalAlignment="Bottom" Width="180" Margin="0,0,204,14"/>
+
+            <Button Click="UpdateChannel_ButtonClick" Content="Update Change"  HorizontalAlignment="Right"  VerticalAlignment="Bottom" Width="180" Margin="0,0,12,14"/>
+              
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadLineNews", "HeadLineNews\HeadLineNews.csproj", "{E7017E13-76E2-4703-8EFD-FE22ECD1BDE1}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup-HeadlineNews", "Setup-HeadlineNews\Setup-HeadlineNews.vdproj", "{E59F37BC-52BC-4743-94DF-55D15CD8EA05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7017E13-76E2-4703-8EFD-FE22ECD1BDE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7017E13-76E2-4703-8EFD-FE22ECD1BDE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7017E13-76E2-4703-8EFD-FE22ECD1BDE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7017E13-76E2-4703-8EFD-FE22ECD1BDE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E59F37BC-52BC-4743-94DF-55D15CD8EA05}.Debug|Any CPU.ActiveCfg = Debug
+		{E59F37BC-52BC-4743-94DF-55D15CD8EA05}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BCB388F-3CDA-4300-A292-C9DFA3C4927F}
+	EndGlobalSection
+EndGlobal

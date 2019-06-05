@@ -1,0 +1,53 @@
+﻿<Window x:Class="HeadLineNews.UserLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HeadLineNews"
+        mc:Ignorable="d"
+           xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="UserLogin" Height="500" Width="350" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen" Visibility="Visible" AllowsTransparency="True" WindowStyle="None">
+    <Grid>
+        <Grid Height="280" VerticalAlignment="top">
+
+            <Rectangle>
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" >
+                        <GradientStop Color="#ff2281d1"></GradientStop>
+                        <GradientStop Color="#ff34268a" Offset="2"></GradientStop>
+
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+
+
+            </Rectangle>
+            <Image Source="image/news.png" Width="100" Height="100" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="20"/>
+            <Rectangle Width="280" Height="240" Fill="White" Margin="22,152,22,-112" RadiusX="6">
+                <Rectangle.Effect>
+                    <DropShadowEffect Color="#FFBbbbbb" Direction="0" BlurRadius="15" ShadowDepth="1" RenderingBias="Quality"/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Grid Width="280" Height="240" Margin="22,152,22,-112" VerticalAlignment="Center">
+
+                <materialDesign:PackIcon Kind="Email" Margin="12,56,0,0" />
+                <Label Content="Email:" HorizontalAlignment="Left" Margin="32,52,0,0" VerticalAlignment="Top" Height="37" Width="49"/>
+                <TextBox Name="tbUserEmail" HorizontalAlignment="Left" Height="36" Margin="98,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159"/>
+                <Label Content="Password:" HorizontalAlignment="Left" Margin="32,105,0,0" VerticalAlignment="Top" Height="37" Width="69"/>
+                <PasswordBox Name="pwdUserPsw" HorizontalAlignment="Left" Margin="98,105,0,0" VerticalAlignment="Top" Width="159"/>
+                <materialDesign:PackIcon Kind="Key" RenderTransformOrigin="2.5,1.875" Margin="11,109,0,0" />
+                <Button  IsDefault="True" Click="UserLogin_ButtonClick" Name="btnComfirmDelete"  Content="Login" HorizontalAlignment="Left" Margin="163,190,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.093,-0.406"/>
+                <CheckBox  Name="cbRemenberMe" Content="Remember Me" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top"/>
+                <Button Click="BtnCancel_ButtenClick" Content="Cancel" HorizontalAlignment="Left" Margin="30,190,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.093,-0.406"/>
+
+            </Grid>
+        </Grid>
+    </Grid>
+
+</Window>

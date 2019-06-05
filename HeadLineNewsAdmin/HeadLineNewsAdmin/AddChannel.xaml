@@ -1,0 +1,59 @@
+﻿<Window x:Class="HeadLineNewsAdmin.AddchannelDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HeadLineNewsAdmin"
+        mc:Ignorable="d"
+        Title="Add Channel"  Height="287.5" Width="523.5"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Label Content="Channel Name:" HorizontalAlignment="Left" Margin="44,79,0,0" VerticalAlignment="Top" Width="112"/>
+        <GroupBox
+  Header="Icon" 
+  Margin="354,34,21,52">
+            <Image  Name="imgChannelPreview" HorizontalAlignment="Left" Margin="0,0,0,1" Width="126" RenderTransformOrigin="-0.945,0.366"/>
+        </GroupBox>
+        <TextBox TextChanged="TbChannelName_LostFocus" LostFocus="TbChannelName_LostFocus" Name="tbChannelName" HorizontalAlignment="Left" Height="23" Margin="171,81,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Channel Source:" HorizontalAlignment="Left" Margin="44,123,0,0" VerticalAlignment="Top" Width="112"/>
+        <TextBox TextChanged="TbChannelSource_LostFocus" LostFocus="TbChannelSource_LostFocus" Name="tbChannelSource" HorizontalAlignment="Left" Height="23" Margin="171,126,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Channel Location:" HorizontalAlignment="Left" Margin="44,166,0,0" VerticalAlignment="Top" Width="112"/>
+        <ComboBox SelectionChanged="CbChannelLocation_SelectionChanged" Name="cbChannelLocation" HorizontalAlignment="Left" Margin="171,163,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Europe</ComboBoxItem>
+            <ComboBoxItem>American</ComboBoxItem>
+            <ComboBoxItem>Australia</ComboBoxItem>
+            <ComboBoxItem>Asia</ComboBoxItem>
+
+
+        </ComboBox>
+        <Label Content="Chose an icon:" HorizontalAlignment="Left" Margin="44,34,0,0" VerticalAlignment="Top" Width="112"/>
+        <Button Click="OpenFile_ButtonClick" Content="Click Me!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="171,34,0,0" RenderTransformOrigin="-3.333,4.773" Height="30"/>
+        <Button Click="AddChannel_ButtonClick" Content="Add Channel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="216,207,0,0" RenderTransformOrigin="-3.333,4.773"/>
+        <Label Name="lbCheckSource" HorizontalAlignment="Left" Margin="307,122,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,2.423" Height="23" Width="22" Foreground="Red"/>
+        <Label Name="lbCheckName" HorizontalAlignment="Left" Margin="307,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,2.423" Height="23" Width="22" Foreground="Red"/>
+        <Label Name="lbCheckLocation" HorizontalAlignment="Left" Margin="307,162,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,2.423" Height="23" Width="22" Foreground="Red"/>
+        <Label Name="lbCheckIcon" HorizontalAlignment="Left" Margin="307,48,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,2.423" Height="23" Width="22" Foreground="Red"/>
+
+        <Button Name="btnAddEditChannel" Click="AddChannel_ButtonClick" Content="Add Channel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Margin="176,207,0,0" RenderTransformOrigin="-3.333,4.773"/>
+
+        <materialDesign:PackIcon Kind="Verified"  Name="IconLocation" Margin="311,166,0,0" RenderTransformOrigin="1.048,0.484" Visibility="Collapsed" />
+        <materialDesign:PackIcon Kind="SecurityClose" Name="IconLocationWrong" Margin="311,166,0,0" Visibility="Collapsed"/>
+        <materialDesign:PackIcon Kind="Verified"  x:Name="IconSource" Margin="311,126,0,0" RenderTransformOrigin="1.048,0.484" Visibility="Collapsed"/>
+        <materialDesign:PackIcon Kind="SecurityClose"  x:Name="IconSourceWrong" Margin="311,126,0,0" RenderTransformOrigin="1.048,0.484" Visibility="Collapsed"/>
+        <materialDesign:PackIcon Kind="Verified"  x:Name="IconName" Margin="311,83,0,0" RenderTransformOrigin="1.048,0.484" Visibility="Collapsed"/>
+        <materialDesign:PackIcon Kind="SecurityClose"  x:Name="IconNameWrong" Margin="311,83,0,0" RenderTransformOrigin="1.048,0.484" Visibility="Collapsed"/>
+        <materialDesign:PackIcon Kind="Verified"  x:Name="IconIcon" Margin="311,44,0,0" RenderTransformOrigin="1.048,0.484" Visibility="Collapsed"/>
+        <materialDesign:PackIcon Kind="SecurityClose"  x:Name="IconIconWrong" Margin="311,44,0,0" RenderTransformOrigin="1.048,0.484" Visibility="Collapsed"/>
+       
+
+
+    </Grid>
+</Window>

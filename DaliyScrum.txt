@@ -1,0 +1,262 @@
+<< current date goes here >>
+1. What I have done / not done since last Scrum?
+2. What I plan to do from this scrum to next? (next 24 hours)
+3. Where do I need assistance? What do I need to figure out?
+
+02/05/2019  Bianyu Wang
+
+1. Done since last scrum:
+- created project plan
+- created project proposal
+- created backlog( admin part, and some client part) in trello
+2. To do until next Scrum:
+- finish the proposal
+- setup the initial project
+- create the database in azure(upload image using blob...)
+- create the admin version (maybe finish admin version?)
+3. Need assistance / figure things out
+- ask "big brother" should we put the client version and admin into same installation?!
+- how to upload image using blob...
+
+02/05/2019  Yangyang Ma
+
+1. Done since last scrum:
+- created project proposal -draft
+- been invited in trello
+- created bitBucket repository
+- set up account in azure
+- know about Scrum-Agile
+2. To do until next Scrum:
+- finish the proposal
+- setup the initial project
+- design the windows which will be shown to users
+- create the database in azure
+- know about conflict in sourcetree
+- Set up Material Design library
+3. Need assistance / figure things out
+- learn how to use Material Design by online tutorial
+
+<<<<<<< HEAD
+
+
+03/05/2019 Yangyang Ma
+
+1. Done since last scrum:
+- modify project proposal
+- finish project proposal
+- modify trello
+- setup the initial project
+- create the database in azure
+- finish 5 tables in database
+- know about conflict in sourcetree
+2. To do until next Scrum:
+- collect multiple icons represent different news channels
+- insert data into tables
+- learn more about Material Design
+- write classes
+3. Need assistance / figure things out
+- read partner's code
+=======
+03/05/2019  Bianyu Wang
+
+1. Done since last scrum:
+- finish the tutorial of Material Desinge
+- finish the prosal
+- begin the tutorial of blob with azure
+2. To do until next Scrum:
+- finish the tutorial of blob with azure
+- try uplode images into azure 
+- create the admin version (maybe finish admin version?)
+
+3. Need assistance / figure things out
+>>>>>>> 28b9fd5e74b35155472216be9130260fe460a939
+
+04/05/2019 Yangyang Ma
+
+1. Done since last scrum:
+- earn more about Material Design
+2. To do until next Scrum:
+- connect to Azure at home
+- insert data into tables
+- write classes
+3. Need assistance / figure things out
+- connect to Azure at home
+
+05/05/2019 Yangyang Ma
+
+1. Done since last scrum:
+- connect to Azure at home
+- insert data into tables
+- update subscript table, cancel auto-increment of the primary key
+2. To do until next Scrum:
+- test teammate's codes
+- insert more data from front end
+- creat the xaml of register/login window
+3. Need assistance / figure things out
+- verify data when login -- using PHP?
+
+06/05/2019 Yangyang Ma
+
+1. Done since last scrum:
+- connect to Azure at home
+- insert data into tables
+- update subscript table, cancel auto-increment of the primary key
+2. To do until next Scrum:
+- add material design to every window exists
+- modify some window design
+- insert more data from front end
+- creat the xaml of register/login window
+- find symbol "wrong" in ascii
+3. Need assistance / figure things out
+- verify data when login -- using PHP?
+
+<<<<<<< HEAD
+07/05/2019 Yangyang Ma
+
+1. Done since last scrum:
+- add material design to every window exists
+- modify some window design
+- add check icon to verification place
+- change foreground of some labels
+2. To do until next Scrum:
+- insert source data from front end
+- context menu
+3. Need assistance / figure things out
+- verify data when login -- using PHP?
+=======
+07/07/2019 Bianyu Wang
+
+1. Done since last scrum:
+- update channel finished
+- add channel finished
+
+2. To do until next Scrum:
+- add admin login control
+-add delete channel function
+
+3. Need assistance / figure things out
+- md5? delete with password
+>>>>>>> 09dbe505bc3240b3c6b05f553b16e55a35f01e08
+
+08/05/2019 Yangyang Ma
+
+1. Done since last scrum:
+- modify Title
+- insert data to subscript
+- add material design to menu
+- test add channel
+2. To do until next Scrum:
+- install
+- test add channel
+- insert source data from front end
+- context menu
+3. Need assistance / figure things out
+- install
+
+
+08/05/2019 Bianyu Wang
+
+1. Done since last scrum:
+- finish admin channel management 
+2. To do until next Scrum:
+- fix problem in channel management
+- read documentation aboout webbrowser, wrappanel....
+- begin client version
+3. Need assistance / figure things out
+-  webbrowser, wrappanel....
+
+
+<<<<<<< HEAD
+
+09/05/2019 Bianyu Wang
+
+1. Done since last scrum:
+- user login window created
+- user version interface design finished
+2. To do until next Scrum:
+- user- subscript management
+- read documentation aboout webbrowser, wrappanel....
+- finish user version
+3. Need assistance / figure things out
+-  webbrowser, wrappanel....
+=======
+09/05/2019 Yangyang Ma
+
+1. Done since last scrum:
+- read tutorial about installer
+- find how to get the missing type in VS
+- find tutorial about how to print
+- test add channel
+2. To do until next Scrum:
+- install
+- test add channel
+3. Need assistance / figure things out
+- print/ pdf
+>>>>>>> 098b020cfd5daf18a6a68ebf5882fc8d7f7e5504
+<<<<<<< HEAD
+
+10/05/2019 Bianyu Wang
+
+1. Done since last scrum:
+- user login window done
+- link user account and their channel subscribed
+2. To do until next Scrum:
+- user- subscript management
+- handle javascript error,
+- remember me function
+- read documentation aboout webbrowser, wrappanel....
+- finish user version
+3. Need assistance / figure things out
+-  infinite scrolling
+=======
+=======
+10/05/2019 Yangyang Ma
+
+1. Done since last scrum:
+- read tutorial about generating pdf/printing/add icon to installer
+- fix adding icon to title bar
+2. To do until next Scrum:
+- add icon to installer
+- generate pdf
+- test add channel
+- maybe add admin
+3. Need assistance / figure things out
+
+
+11/05/2019 Bianyu WANG
+
+1. Done since last scrum:
+- finish open ie out of app
+-user can change channels subscribed
+2. To do until next Scrum:
+- modify database table subscrib
+-add register new client
+3. Need assistance / figure things out
+slience ie javascript error
+
+11/05/2019 Yangyang Ma
+
+1. Done since last scrum:
+- add button and icon to user mainwindow
+- test add channel
+- test admin
+- test user
+- prepare ppt
+2. To do until next Scrum:
+- do admin installer
+- do user installer
+- finish ppt
+3. Need assistance / figure things out
+
+12/05/2019 Yangyang Ma
+
+1. Done since last scrum:
+- test admin
+- test user
+- prepare ppt
+2. To do until next Scrum:
+- do admin installer
+- do user installer
+- finish ppt
+- generate sql
+3. Need assistance / figure things out

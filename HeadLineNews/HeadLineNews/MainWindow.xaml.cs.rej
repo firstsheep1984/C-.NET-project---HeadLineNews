@@ -1,0 +1,18 @@
+diff a/HeadLineNews/HeadLineNews/MainWindow.xaml.cs b/HeadLineNews/HeadLineNews/MainWindow.xaml.cs	(rejected hunks)
+@@ -197,6 +197,15 @@
+              System.Diagnostics.Process.Start(a.Url); 
+              }
+  }
+-        
++
++        private void ButtonPrint_Click(object sender, RoutedEventArgs e)
++        {
++            PrintDialog dlg = new PrintDialog();
++            if (dlg.ShowDialog() == true)
++            {
++                dlg.PrintVisual(printGrid, "Print Receipt");
++            }
++           
++        }
+     }
+ }

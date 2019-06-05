@@ -1,0 +1,24 @@
+diff a/HeadLineNews/HeadLineNews/ChannelMagagement.xaml.cs b/HeadLineNews/HeadLineNews/ChannelMagagement.xaml.cs	(rejected hunks)
+@@ -67,11 +67,18 @@
+ 
+         private void CheckImg_Unchecked(object sender, RoutedEventArgs e)
+         {
+-            if (countChannelSub ==5 )
++
++            CheckBox checkBox = (CheckBox)sender;
++            string ch_idStr = checkBox.Name.Substring(2);
++           int ch_id= int.Parse(ch_idStr);
++            countChannelSub = countChannelSub - 1;
++            Channel channelRemove = Globals.Db.GetOneChannels(ch_id);
++            for (int i = Globals.currUserSub.Count-1; i >=0; i--)
+             {
+-                countChannelSub = countChannelSub - 1;
+-              
+-            }
++                if (Globals.currUserSub[i].Ch_id == ch_id)
++                    Globals.currUserSub.Remove(Globals.currUserSub[i]);   
++                 }
++         
+         }
+ 
+         private void CheckImg_Checked(object sender, RoutedEventArgs e)

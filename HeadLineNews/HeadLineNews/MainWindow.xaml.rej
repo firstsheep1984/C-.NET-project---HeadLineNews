@@ -1,0 +1,10 @@
+diff a/HeadLineNews/HeadLineNews/MainWindow.xaml b/HeadLineNews/HeadLineNews/MainWindow.xaml	(rejected hunks)
+@@ -21,7 +21,7 @@
+             <ColumnDefinition Width="5" />
+             <ColumnDefinition  />
+         </Grid.ColumnDefinitions>
+-        <Grid  Grid.Column="0" >
++        <Grid Name="printGrid"  Grid.Column="0" >
+             <Grid.RowDefinitions>
+                 <RowDefinition Height="60"></RowDefinition>
+                 <RowDefinition Height="5"></RowDefinition>
